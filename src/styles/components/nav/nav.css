@@ -1,0 +1,25 @@
+.nav {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+}
+.nav__list {
+  display: flex;
+  justify-content: center;
+}
+.nav__list__item {
+  line-height: 80px;
+  margin: 0 15px;
+  display: inline-block;
+}
+.nav__list__item a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+}
+.nav__list__item a:hover {
+  color: #26ff00;
+}/*# sourceMappingURL=nav.css.map */

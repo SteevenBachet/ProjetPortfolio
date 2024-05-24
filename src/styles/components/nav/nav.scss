@@ -1,0 +1,25 @@
+.nav {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  &__list {
+    display: flex;
+    justify-content: center;
+    &__item {
+      line-height: 80px;
+      margin: 0 15px;
+      display: inline-block;
+      a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: bold;
+        display: block;
+      }
+      a:hover {
+        color: #26ff00;
+      }
+    }
+  }
+}
