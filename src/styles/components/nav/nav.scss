@@ -1,25 +1,40 @@
 .nav {
-  height: 80px;
+  height: 60px;
   width: 100%;
   position: fixed;
   z-index: 9999;
-  &__list {
+  background-color: #000000a2;
+  &__container {
+    height: 100%;
+    width: 70%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
     display: flex;
-    justify-content: center;
-    &__item {
-      line-height: 80px;
-      margin: 0 15px;
-      display: inline-block;
-      a {
-        text-decoration: none;
-        color: #ffffff;
-        font-size: 20px;
-        font-weight: bold;
-        display: block;
-      }
-      a:hover {
-        color: #26ff00;
+    justify-content: space-between;
+    &__logo {
+      display: flex;
+      align-items: center;
+    }
+    &__list {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      &__item {
+        display: inline-block;
+        a {
+          text-decoration: none;
+          color: #ffffff;
+          font-size: 16px;
+          font-weight: bold;
+          padding: 0px 10px;
+        }
+        a:hover {
+          color: #82ff74;
+        }
       }
     }
   }
+  
 }
+

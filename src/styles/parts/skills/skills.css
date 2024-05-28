@@ -1,0 +1,23 @@
+.skills {
+  background-color: rgb(115, 236, 71);
+  padding: 50px 0;
+}
+.skills__title {
+  font-family: PressStart;
+  text-align: center;
+  font-size: 30px;
+}
+.skills__container {
+  width: 70%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skills__container__item {
+  height: 300px;
+  background-color: rgb(135, 135, 135);
+  width: 30%;
+}/*# sourceMappingURL=skills.css.map */
