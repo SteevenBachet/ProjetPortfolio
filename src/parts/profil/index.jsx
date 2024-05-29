@@ -4,7 +4,7 @@ import photoIdentite from '../../assets/PhotoIdentite.png'
 
 function Profil() {
     return (
-      <div className="profil">
+      <div className="profil" id="profil">
         <div className="profil__container">
             <h2 className="profil__container__title">PROFIL</h2>
             <div className='profil__container__content'>

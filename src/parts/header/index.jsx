@@ -10,7 +10,7 @@ const TEXTS = [
 
 function Header() {
   return (
-    <header className="header">
+    <header className="header" id="header">
       <div className="header__overlay">
         <h1 className="header__overlay__title">Steeven Bachet</h1>
         <div className="header__overlay__text">

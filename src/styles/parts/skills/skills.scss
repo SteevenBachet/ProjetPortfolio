@@ -1,5 +1,5 @@
 .skills {
-    background-color: rgb(115, 236, 71);
+    background-color: rgb(255, 255, 255);
     padding: 50px 0;
     &__title {
         font-family: PressStart;
@@ -16,7 +16,8 @@
         align-items: center;
        &__item {
         height: 300px;
-        background-color: rgb(135, 135, 135);
+        border-radius: 5px;
+        background-color: rgb(211, 248, 209);
         width: 30%;
        }
     }

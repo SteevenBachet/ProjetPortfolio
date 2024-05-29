@@ -4,7 +4,6 @@ import Banner from "../../parts/banner";
 import Skills from "../../parts/skills";
 import Portfolio from "../../parts/portfolio";
 import Contact from "../../parts/contact";
-import Footer from "../../components/footer";
 
 function Home() {
   return (
@@ -15,7 +14,6 @@ function Home() {
       <Skills/>
       <Portfolio/>
       <Contact/>
-      <Footer/>
     </div>
   );
 }

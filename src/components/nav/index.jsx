@@ -12,19 +12,19 @@ function Nav() {
             
             <ul className="nav__container__list" >
                 <li className="nav__container__list__item">
-                    <a href="#home-section">ACCUEIL</a>
+                    <a href="#header">ACCUEIL</a>
                 </li>
                 <li className="nav__container__list__item">
-                    <a href="#profil-section">PROFIL</a>
+                    <a href="#profil">PROFIL</a>
                 </li>
                 <li className="nav__container__list__item">
-                    <a href="#skill-section">COMPÉTENCES</a>
+                    <a href="#skills">COMPÉTENCES</a>
                 </li>
                 <li className="nav__container__list__item">
-                    <a href="#projects-section">PORTFOLIO</a>
+                    <a href="#portfolio">PORTFOLIO</a>
                 </li>
                 <li className="nav__container__list__item">
-                    <a href="#projects-section">CONTACT</a>
+                    <a href="#contact">CONTACT</a>
                 </li>
             </ul>
         </div>
