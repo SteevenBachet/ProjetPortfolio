@@ -117,9 +117,7 @@ function Contact() {
               src={screenCv}
               alt="CV"
             />
-            <button className="contact__container__item__cv__button">
-              Télécharger CV
-            </button>
+            <a class="contact__container__item__cv__button" href="/CV_STEEVEN_BACHET.pdf" download="CV-SteevenBACHET">Telecharger CV</a>
           </div>
         </div>
       </div>

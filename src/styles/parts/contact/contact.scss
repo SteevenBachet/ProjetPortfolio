@@ -97,6 +97,9 @@
                 }
             }  
             &__cv {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
                 &__image {
                     height: auto; 
                     width: 100%; 
@@ -113,7 +116,8 @@
                     border-radius: 5px;
                     cursor: pointer;
                     font-family: PressStart;
-                    transition: background-color 0.3s ease;
+                    text-decoration: none;
+                    text-align: center;
                     &:hover {
                         background-color: rgb(194, 254, 194);
                     }

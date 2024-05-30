@@ -95,6 +95,11 @@
 .contact__container__item__info__icons__icon i:hover {
   color: green;
 }
+.contact__container__item__cv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 .contact__container__item__cv__image {
   height: auto;
   width: 100%;
@@ -111,7 +116,8 @@
   border-radius: 5px;
   cursor: pointer;
   font-family: PressStart;
-  transition: background-color 0.3s ease;
+  text-decoration: none;
+  text-align: center;
 }
 .contact__container__item__cv__button:hover {
   background-color: rgb(194, 254, 194);
