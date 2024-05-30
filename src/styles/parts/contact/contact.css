@@ -17,10 +17,12 @@
 .contact__container {
   display: flex;
   gap: 100px;
+  padding: 50px;
 }
 .contact__container__item {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 400px;
 }
 .contact__container__item__form {
@@ -56,20 +58,56 @@
   font-family: PressStart;
 }
 .contact__container__item__form button:hover {
-  background-color: #ccc;
+  background-color: #b4ffa0;
+}
+.contact__container__item__form__message {
+  text-align: center;
+}
+.contact__container__item__info {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.contact__container__item__info__details {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.contact__container__item__info__details__detail i {
+  padding-right: 10px;
+}
+.contact__container__item__info__details__detail a {
+  text-decoration: none;
+  color: white;
+}
+.contact__container__item__info__details__detail a:hover {
+  color: green;
+}
+.contact__container__item__info__icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact__container__item__info__icons__icon i {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+}
+.contact__container__item__info__icons__icon i:hover {
+  color: green;
 }
 .contact__container__item__cv__image {
   height: auto;
   width: 100%;
   border-radius: 2px;
+  border: 2px solid rgb(255, 255, 255);
 }
 .contact__container__item__cv__button {
   width: 100%;
   padding: 10px;
   font-size: 12px;
   background-color: rgb(255, 255, 255);
-  color: green;
-  border: 2px solid green;
+  color: rgb(0, 0, 0);
+  border: none;
   border-radius: 5px;
   cursor: pointer;
   font-family: PressStart;

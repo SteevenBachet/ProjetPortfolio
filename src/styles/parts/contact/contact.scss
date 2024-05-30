@@ -16,9 +16,11 @@
     &__container {
         display: flex;
         gap: 100px;
+        padding: 50px;
         &__item {
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
             width: 400px;
             &__form {
                 display: flex;
@@ -51,24 +53,63 @@
                     margin-top: 10px;
                     font-family: PressStart;
                     &:hover {
-                        background-color: #ccc;
+                        background-color: #b4ffa0;
                     }
                 }
-                
+                &__message {
+                    text-align: center;
+                }
+            }
+            &__info {
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;
+                &__details {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 18px;
+                    &__detail {
+                        i {
+                            padding-right: 10px;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            &:hover {
+                                color: green;
+                            }
+                        }
+                    }
+                }
+                &__icons {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    &__icon {
+                        i {
+                            color: rgb(255, 255, 255);
+                            font-size: 40px;
+                            &:hover {
+                                color: green;
+                            }
+                        }
+                    }
+                }
             }  
             &__cv {
                 &__image {
                     height: auto; 
                     width: 100%; 
                     border-radius: 2px;
+                    border: 2px solid rgb(255, 255, 255);
                 }
                 &__button {
                     width: 100%;
                     padding: 10px;
                     font-size: 12px;
                     background-color: rgb(255, 255, 255);
-                    color: green; 
-                    border: 2px solid green;
+                    color: rgb(0, 0, 0); 
+                    border: none;
                     border-radius: 5px;
                     cursor: pointer;
                     font-family: PressStart;

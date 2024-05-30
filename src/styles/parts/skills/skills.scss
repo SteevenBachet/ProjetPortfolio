@@ -14,11 +14,28 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-       &__item {
-        height: 300px;
-        border-radius: 5px;
-        background-color: rgb(211, 248, 209);
-        width: 30%;
-       }
+        padding: 50px;
+        &__item {
+            width: 30%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            i {
+                font-size: 50px;
+                color: green;
+            }
+            &__title {
+                font-size: 20px;
+                font-family: PressStart;
+            }
+            &__list {
+                list-style-type: none;
+                li {
+                    padding: 2px;
+                }
+            }
+
+        }
     }
 }

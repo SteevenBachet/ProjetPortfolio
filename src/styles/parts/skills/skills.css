@@ -15,10 +15,26 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 50px;
 }
 .skills__container__item {
-  height: 300px;
-  border-radius: 5px;
-  background-color: rgb(211, 248, 209);
   width: 30%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.skills__container__item i {
+  font-size: 50px;
+  color: green;
+}
+.skills__container__item__title {
+  font-size: 20px;
+  font-family: PressStart;
+}
+.skills__container__item__list {
+  list-style-type: none;
+}
+.skills__container__item__list li {
+  padding: 2px;
 }/*# sourceMappingURL=skills.css.map */
