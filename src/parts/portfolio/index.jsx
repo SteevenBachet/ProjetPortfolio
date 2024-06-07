@@ -1,12 +1,22 @@
+import React, { useEffect, useState } from 'react';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../../styles/parts/portfolio/portfolio.css';
 import Slider from 'react-slick';
+import Carrousel from '../../components/carrousel';
 
-const reponse = await fetch('http://localhost:3000/projects.json');
-const projects = await reponse.json();
+const Portfolio = () => {
+  const [projects, setProjects] = useState([]);
+  const [selectedProject, setSelectedProject] = useState(null);
 
-function Portfolio() {
+  useEffect(() => {
+    const fetchProjects = async () => {
+      const response = await fetch('http://localhost:3000/projects.json');
+      const data = await response.json();
+      setProjects(data);
+    };
+    fetchProjects();
+  }, []);
 
   const settings = {
     dots: true,
@@ -34,15 +44,27 @@ function Portfolio() {
     ],
   };
 
+  const openModal = (project) => {
+    setSelectedProject(project);
+  };
+
+  const closeModal = () => {
+    setSelectedProject(null);
+  };
+
   return (
     <div className="portfolio" id="portfolio">
       <h2 className="portfolio__title">PORTFOLIO</h2>
       <div className="portfolio__container">
         <Slider {...settings}>
           {projects.map((project, index) => (
-            <div key={index} className="portfolio__item">
+            <div
+              key={index}
+              className="portfolio__item"
+              onClick={() => openModal(project)}
+            >
               <img
-                src={project.image}
+                src={project.images[0]}
                 alt={project.title}
                 className="portfolio__image"
               />
@@ -54,8 +76,32 @@ function Portfolio() {
           ))}
         </Slider>
       </div>
+
+      {selectedProject && (
+        <div className="modal" onClick={closeModal}>
+          <div className="modal__content" onClick={(e) => e.stopPropagation()}>
+            <span className="modal__close" onClick={closeModal}>
+              &times;
+            </span>
+            <h2>{selectedProject.title}</h2>
+            <div className="modal__scrollable-content">
+              <Carrousel selectedProject={selectedProject}/>
+              <div className="modal__info">
+                <p>{selectedProject.description}</p>
+                <p>{selectedProject.description}</p>
+                <p>{selectedProject.description}</p>
+                <p>{selectedProject.description}</p>
+                <p>{selectedProject.description}</p>
+                <p>{selectedProject.description}</p>
+                <p>{selectedProject.description}</p>
+                <p>{selectedProject.description}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
-}
+};
 
 export default Portfolio;

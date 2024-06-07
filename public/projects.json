@@ -2,26 +2,22 @@
     {
         "title": "Projet 1",
         "description": "Description du projet 1",
-        "image": "imagesProjects/project1/test2.jpg"
+        "images": ["imagesProjects/project1/project1-1.webp", "imagesProjects/project1/project1-2.webp", "imagesProjects/project1/project1-3.webp"]
     },
     {
-        "title": "Projet 2",
-        "description": "Description du projet 2",
-        "image": "imagesProjects/project2/test4.jpg"
+        "title": "Projet 1",
+        "description": "Description du projet 1",
+        "images": ["imagesProjects/project1/project1-1.webp", "imagesProjects/project1/project1-2.webp", "imagesProjects/project1/project1-3.webp"]
     },
     {
-        "title": "Projet 2",
-        "description": "Description du projet 2",
-        "image": "imagesProjects/project2/test4.jpg"
+        "title": "Projet 1",
+        "description": "Description du projet 1",
+        "images": ["imagesProjects/project1/project1-1.webp", "imagesProjects/project1/project1-2.webp", "imagesProjects/project1/project1-3.webp"]
     },
     {
-        "title": "Projet 2",
-        "description": "Description du projet 2",
-        "image": "imagesProjects/project2/test4.jpg"
-    },
-    {
-        "title": "Projet 2",
-        "description": "Description du projet 2",
-        "image": "imagesProjects/project2/test4.jpg"
+        "title": "Projet 1",
+        "description": "Description du projet 1",
+        "images": ["imagesProjects/project1/project1-1.webp", "imagesProjects/project1/project1-2.webp", "imagesProjects/project1/project1-3.webp"]
     }
+   
 ]

@@ -1,0 +1,57 @@
+.carrousel {
+  position: relative;
+  padding: 20px 0;
+}
+.carrousel__container {
+  position: relative;
+  height: 600px;
+  border-radius: 2px;
+}
+.carrousel__container__images {
+  position: absolute;
+  width: 100%;
+}
+.carrousel__container__images__image {
+  position: absolute;
+  height: 600px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0; /* Toutes les images sont initialement transparentes */
+  transition: opacity 0.5s ease;
+}
+.carrousel__container__images__image.active {
+  opacity: 1;
+}
+.carrousel__container__buttons {
+  position: absolute;
+  top: 50%;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0.75;
+}
+.carrousel__container__buttons.button-left {
+  left: 0;
+  margin-left: 20px;
+  transform: translateY(-50%) rotate(180deg);
+}
+.carrousel__container__buttons.button-right {
+  right: 0;
+  margin-right: 20px;
+  transform: translateY(-50%) rotate(0deg);
+}
+.carrousel__container__buttons:hover {
+  opacity: 1;
+}
+.carrousel__container__buttons__image {
+  width: 40px;
+}
+.carrousel__container__counter {
+  color: white;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}/*# sourceMappingURL=carrousel.css.map */

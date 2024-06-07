@@ -10,10 +10,10 @@ function Profil() {
             <div className='profil__container__content'>
                 <img className="profil__container__content__image" src={photoIdentite} alt="identité"/>
                 <p className='profil__container__content__text'>
-                    <span>technicien de maintenance industriel </span> passionné par le développement informatique.
-                    Il y a plusieurs mois, j'ai commencé à programmer mon premier jeu vidéo par simple curiosité. j'ai pris goût à ce domaine et je suis devenu un <span>développeur amateur</span>. 
-                    Actuellement, j'apprends à programmer en dehors de mon travail de manière autodidacte en utilisant des ressources en ligne, notamment en <span>C#, Front-end et Javascript</span>. Mais je suis conscient que pour consolider mes connaissances et devenir un professionnel compétent, j'ai besoin de suivre une <span>formation en apprentissage</span>.
-                    Mon objectif est d'acquérir les compétences nécessaires pour devenir un développeur qualifié et travailler sur des projets passionnants dans ce domaine en constante évolution.
+                  Bonjour, je m'appelle <span>Steeven Bachet</span> et je suis <span>développeur web junior</span>. Auparavant, j'ai travaillé plusieurs années en tant que <span>technicien de maintenance industrielle</span>, ce qui m'a permis d'acquérir des compétences telles que le diagnostic de pannes, le travail en équipe, l'écoute et l'organisation.   
+                </p>
+                <p className='profil__container__content__text'>
+                  Après avoir créé mes <span>premiers jeux vidéo</span> sur Game Maker, je me suis intéressé au développement informatique en programmant en autodidacte pendant mon temps libre. J'ai ensuite décidé de me reconvertir professionnellement dans le développement web après avoir quitté mon emploi. J'ai suivi une formation de <span>développeur web sur OpenClassroom</span> pendant six mois pour être le mieux équipé possible avant d'entrer dans le monde professionnel.   
                 </p>
             </div>
             
