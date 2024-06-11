@@ -58,7 +58,7 @@
   font-family: PressStart;
 }
 .contact__container__item__form button:hover {
-  background-color: #b4ffa0;
+  background-color: #63fb52;
 }
 .contact__container__item__form__message {
   text-align: center;
@@ -81,7 +81,7 @@
   color: white;
 }
 .contact__container__item__info__details__detail a:hover {
-  color: green;
+  color: #63fb52;
 }
 .contact__container__item__info__icons {
   display: flex;
@@ -93,7 +93,7 @@
   font-size: 40px;
 }
 .contact__container__item__info__icons__icon i:hover {
-  color: green;
+  color: #63fb52;
 }
 .contact__container__item__cv {
   display: flex;
@@ -120,5 +120,5 @@
   text-align: center;
 }
 .contact__container__item__cv__button:hover {
-  background-color: rgb(194, 254, 194);
+  background-color: #63fb52;
 }/*# sourceMappingURL=contact.css.map */

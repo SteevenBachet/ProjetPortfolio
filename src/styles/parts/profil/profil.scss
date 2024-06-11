@@ -22,14 +22,14 @@
         &__image {
             width: 150px;
             border-radius: 2px;
-            box-shadow: 0 0 10px 5px rgba(50, 172, 26, 0.63);
+            box-shadow: 0 0 10px 5px #63fb5290;
         }
         &__text {
             color: rgb(255, 255, 255);
             font-size: 18px;
             width: 70%;
             span {
-                color: rgb(36, 219, 100);
+                color: #63fb52;
             }
             &__space {
                 margin-top: 20px;

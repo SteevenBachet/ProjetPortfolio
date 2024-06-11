@@ -1,23 +1,101 @@
 [
-    {
-        "title": "Projet 1",
-        "description": "Description du projet 1",
-        "images": ["imagesProjects/project1/project1-1.webp", "imagesProjects/project1/project1-2.webp", "imagesProjects/project1/project1-3.webp"]
-    },
-    {
-        "title": "Projet 1",
-        "description": "Description du projet 1",
-        "images": ["imagesProjects/project1/project1-1.webp", "imagesProjects/project1/project1-2.webp", "imagesProjects/project1/project1-3.webp"]
-    },
-    {
-        "title": "Projet 1",
-        "description": "Description du projet 1",
-        "images": ["imagesProjects/project1/project1-1.webp", "imagesProjects/project1/project1-2.webp", "imagesProjects/project1/project1-3.webp"]
-    },
-    {
-        "title": "Projet 1",
-        "description": "Description du projet 1",
-        "images": ["imagesProjects/project1/project1-1.webp", "imagesProjects/project1/project1-2.webp", "imagesProjects/project1/project1-3.webp"]
-    }
-   
+  {
+    "title": "Portfolio v2",
+    "description": "Site web développeur",
+    "images": [
+      "imagesProjects/project1/project1-1.PNG",
+      "imagesProjects/project1/project1-2.PNG",
+      "imagesProjects/project1/project1-3.PNG",
+      "imagesProjects/project1/project1-4.PNG"
+    ],
+    "information": "Site sur lequel vous êtes actuellement et toujours en cours d'évolution",
+    "technologies": [
+      "HTML", "SASS", "React.JS"
+    ]
+  },
+  {
+    "title": "Mon vieux grimoire",
+    "description": "Projet de formation",
+    "images": [
+      "imagesProjects/project2/project2-1.PNG",
+      "imagesProjects/project2/project2-2.PNG"
+    ],
+    "information": "Création du Back-end d'un site de notation de livres (login, création d'article, modification, suppression et notation)",
+    "technologies": [
+      "Node.js", "Express", "MongoDB"
+    ],
+    "competences": ["Initialiser un projet Back-end", "Node.js", "Express", "MongoDB", "Opération CRUD", "Stocker des données de manière sécurisée", "Authentification", "API RESTful"],
+    "problematique": [""],
+    "github": "https://github.com/SteevenBachet/Mon-Vieux-Grimoire"
+  },
+  {
+    "title": "Kasa",
+    "description": "Projet de formation",
+    "images": [
+      "imagesProjects/project3/project3-1.PNG",
+      "imagesProjects/project3/project3-2.PNG",
+      "imagesProjects/project3/project3-3.PNG"
+    ],
+    "information": "Création du Front-end d'un site le location d'hebergement avec React",
+    "technologies": [
+      "HTML", "SASS", "React.JS"
+    ],
+    "competences": ["Initialiser une application Create React App", "structuration d'un projet", "Sass", "React.js", "eslint et prettier", "Configurer la navigation entre les pages de l'application avec React router", "Développer des éléments de l'interface d'un site web grâce à des composants React"],
+    "problematique": ["Créer une structure du projet cohérente"],
+    "github": "https://github.com/SteevenBachet/Kasa"
+  },
+  {
+    "title": "Portfolio v1",
+    "description": "Site web développeur",
+    "images": [
+      "imagesProjects/project4/project4-1.PNG",
+      "imagesProjects/project4/project4-2.PNG",
+      "imagesProjects/project4/project4-3.PNG",
+      "imagesProjects/project4/project4-4.PNG"
+    ],
+    "information": "Ancien site portfolio pour mettre en valeur mes compétences lors d'entretien",
+    "technologies": [
+      "HTML", "CSS", "JavaScript"
+    ]
+  },
+  {
+    "title": "E-SHOP autour du monde",
+    "description": "Site web voyage",
+    "images": [
+      "imagesProjects/project5/project5-1.PNG",
+      "imagesProjects/project5/project5-2.PNG",
+      "imagesProjects/project5/project5-3.PNG",
+      "imagesProjects/project5/project5-4.PNG",
+      "imagesProjects/project5/project5-5.PNG"
+    ],
+    "information": "Création et intégration d'un site de vente en ligne spécialisé dans les produits de voyage (site vitrine)",
+    "technologies": [
+      "HTML", "CSS", "JavaScript"
+    ]
+  },
+  {
+    "title": "Maintenance compagny",
+    "description": "Projet de formation",
+    "images": [
+      "imagesProjects/project6/project6-1.PNG",
+      "imagesProjects/project6/project6-2.PNG"
+    ],
+    "information": "Création d'un petit site vitrine pour une entreprise de maintenance fictive afin de s'entrainer sur quelques techniques d'animations",
+    "technologies": [
+      "HTML", "CSS", "JavaScript"
+    ]
+  },
+  {
+    "title": "The_Space_Trouble",
+    "description": "Jeu vidéo coopératif",
+    "images": [
+      "imagesProjects/project7/project7-1.png",
+      "imagesProjects/project7/project7-2.png",
+      "imagesProjects/project7/project7-3.png"
+    ],
+    "information": "Second jeu que j'ai crée avant de me lancer dans l'apprentissage du language C# et le développement web",
+    "technologies": [
+      "GameMaker"
+    ]
+  }
 ]

@@ -25,7 +25,7 @@
 .profil__container__content__image {
   width: 150px;
   border-radius: 2px;
-  box-shadow: 0 0 10px 5px rgba(50, 172, 26, 0.63);
+  box-shadow: 0 0 10px 5px rgba(99, 251, 82, 0.5647058824);
 }
 .profil__container__content__text {
   color: rgb(255, 255, 255);
@@ -33,7 +33,7 @@
   width: 70%;
 }
 .profil__container__content__text span {
-  color: rgb(36, 219, 100);
+  color: #63fb52;
 }
 .profil__container__content__text__space {
   margin-top: 20px;

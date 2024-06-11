@@ -60,43 +60,52 @@ const Portfolio = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="portfolio__item"
+              className="portfolio__container__item"
               onClick={() => openModal(project)}
             >
               <img
                 src={project.images[0]}
                 alt={project.title}
-                className="portfolio__image"
+                className="portfolio__container__item__image"
               />
-              <h3 className="portfolio__item-title">{project.title}</h3>
-              <p className="portfolio__item-description">
+              <h3 className="portfolio__container__item__title">{project.title}</h3>
+              <p className="portfolio__container__item__description">
                 {project.description}
               </p>
+              <div className="portfolio__container__item__more-info">En savoir plus</div>
             </div>
           ))}
         </Slider>
       </div>
 
       {selectedProject && (
-        <div className="modal" onClick={closeModal}>
-          <div className="modal__content" onClick={(e) => e.stopPropagation()}>
-            <span className="modal__close" onClick={closeModal}>
+        <div className="portfolio__modal" onClick={closeModal}>
+          <div className="portfolio__modal__content" onClick={(e) => e.stopPropagation()}>
+            <span className="portfolio__modal__content__close" onClick={closeModal}>
               &times;
             </span>
             <h2>{selectedProject.title}</h2>
-            <div className="modal__scrollable-content">
-              <Carrousel selectedProject={selectedProject}/>
-              <div className="modal__info">
-                <p>{selectedProject.description}</p>
-                <p>{selectedProject.description}</p>
-                <p>{selectedProject.description}</p>
-                <p>{selectedProject.description}</p>
-                <p>{selectedProject.description}</p>
-                <p>{selectedProject.description}</p>
-                <p>{selectedProject.description}</p>
-                <p>{selectedProject.description}</p>
-              </div>
-            </div>
+            <p>{selectedProject.description}</p>
+            <Carrousel selectedProject={selectedProject}/>
+            <p>{selectedProject.information}</p>
+            <ul className="portfolio__modal__content__technology">Technologies :
+              {selectedProject.technologies.map((technologie) => (
+                <li>{technologie}</li>
+              ))}
+            </ul>
+            {selectedProject.competences ? (
+                  <ul className="portfolio__modal__content__skill">Compétences :
+                    {selectedProject.competences.map((competence, index) => (
+                      <li key={index}>{competence}</li>
+                    ))}
+                  </ul>
+                ) : null   
+            }
+            {selectedProject.github ? (
+                <a href={selectedProject.github}>Lien Github du projet</a>
+              ) : null
+            }
+            
           </div>
         </div>
       )}
