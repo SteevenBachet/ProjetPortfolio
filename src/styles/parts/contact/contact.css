@@ -98,7 +98,7 @@
 .contact__container__item__cv {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 25px;
 }
 .contact__container__item__cv__image {
   height: auto;
@@ -121,4 +121,19 @@
 }
 .contact__container__item__cv__button:hover {
   background-color: #63fb52;
+}
+
+@media (max-width: 870px) {
+  .contact__title {
+    margin: 0;
+  }
+  .contact__container {
+    flex-direction: column;
+    gap: 40px;
+    padding: 0;
+  }
+  .contact__container__item {
+    gap: 20px;
+    width: 330px;
+  }
 }/*# sourceMappingURL=contact.css.map */

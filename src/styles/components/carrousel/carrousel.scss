@@ -62,3 +62,26 @@
       }
     }
   }
+
+  @media (max-width: 850px) {
+    .carrousel {
+      height: 300px;
+      &__container {
+        height: 300px;
+        &__images {
+          &__image {
+            height: 296px;
+          }
+        }
+        &__buttons {
+          &__image {
+            width: 25px;
+          }
+        }
+        &__counter {
+          font-size: 12px;
+        }
+      }
+    }
+  
+  }

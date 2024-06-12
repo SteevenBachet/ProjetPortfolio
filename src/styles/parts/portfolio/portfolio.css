@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .portfolio {
   height: auto;
   padding: 50px 0;
@@ -14,11 +13,44 @@
   color: white;
 }
 .portfolio__container {
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
-  padding: 50px;
+  padding: 50px 0 0 0;
+  position: relative;
+}
+.portfolio__container__slider {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+.portfolio__container__slider__track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+.portfolio__container__slider__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 8rem;
+  color: white;
+  cursor: pointer;
+  z-index: 2;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio__container__slider__button--prev {
+  left: 0;
+}
+.portfolio__container__slider__button--next {
+  right: 0;
 }
 .portfolio__container__item {
+  flex: 0 0 50%;
   position: relative;
   padding: 20px;
   text-align: center;
@@ -49,7 +81,7 @@
   opacity: 0;
 }
 .portfolio__container__item__image {
-  width: 100%;
+  width: 80%;
   height: auto;
   border: 1px solid rgb(255, 255, 255);
 }
@@ -61,9 +93,6 @@
 .portfolio__container__item__description {
   font-size: 14px;
   color: white;
-}
-.portfolio__container__item .portfolio__item:focus {
-  outline: none;
 }
 .portfolio__modal {
   position: fixed;
@@ -110,35 +139,36 @@
   padding: 3px;
 }
 
-/* flèche de scroll */
-.slick-prev,
-.slick-next {
-  margin-top: -10px;
-  z-index: 1;
-  background-size: cover;
+@media (max-width: 1500px) {
+  .portfolio__slider__button {
+    width: 70px;
+  }
 }
-
-.slick-prev {
-  margin-left: -40px;
+@media (max-width: 1024px) {
+  .portfolio__container {
+    width: 100%;
+    padding: 50px 0 0 0;
+  }
+  .portfolio__container__item {
+    flex: 0 0 100%;
+  }
+  .portfolio__slider__track {
+    flex-wrap: nowrap;
+  }
 }
-
-.slick-next {
-  margin-right: -40px;
+@media (max-width: 850px) {
+  .portfolio__modal__content {
+    max-width: 80%;
+  }
 }
-
-.slick-prev:before,
-.slick-next:before {
-  content: "";
-  background-size: cover;
-  width: 35px;
-  height: 58px;
-  display: block;
-}
-
-.slick-prev:before {
-  background-image: url("../../../assets/WhiteArrow1.png");
-}
-
-.slick-next:before {
-  background-image: url("../../../assets/WhiteArrow2.png");
+@media (max-width: 600px) {
+  .portfolio__container__item {
+    flex: 0 0 100%;
+  }
+  .portfolio__slider__button {
+    width: 50px;
+  }
+  .portfolio__modal__content__technology {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=portfolio.css.map */

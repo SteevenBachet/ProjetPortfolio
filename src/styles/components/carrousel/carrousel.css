@@ -61,4 +61,22 @@
   bottom: 5px;
   left: 50%;
   transform: translate(-50%, 0);
+}
+
+@media (max-width: 850px) {
+  .carrousel {
+    height: 300px;
+  }
+  .carrousel__container {
+    height: 300px;
+  }
+  .carrousel__container__images__image {
+    height: 296px;
+  }
+  .carrousel__container__buttons__image {
+    width: 25px;
+  }
+  .carrousel__container__counter {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=carrousel.css.map */

@@ -3,7 +3,8 @@
   width: 100%;
   position: fixed;
   z-index: 9999;
-  background-color: #000000a2;
+  background-color: #000000;
+  box-shadow: -1px 1px 7px #63fb5285;
   &__container {
     height: 100%;
     width: 70%;
@@ -15,6 +16,9 @@
     &__logo {
       display: flex;
       align-items: center;
+      font-family: Monoton;
+      font-size: 38px;
+      color: #63fb52;
     }
     &__list {
       height: 100%;
@@ -34,7 +38,50 @@
         }
       }
     }
+    &__menu-hamburger {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: #ffffff;
+      i {
+        font-size: 30px;
+      }
+    }
   }
-  
 }
 
+
+
+@media (max-width: 870px) {
+  .nav {
+    &__container {
+      width: 100%;
+      padding: 0 20px;
+      justify-content: space-between;
+      &__list {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        height: auto;
+        background-color: #000000;
+        padding: 30px 0px 30px 0;
+        &__item {
+          text-align: center;
+        }
+      }
+      &__menu-hamburger {
+        display: flex;
+    
+      }
+      .active {
+        display: flex;
+        border: 1px solid #63fb52;
+      }
+    }
+  }
+}

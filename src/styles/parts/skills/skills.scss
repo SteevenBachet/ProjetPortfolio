@@ -39,3 +39,17 @@
         }
     }
 }
+
+@media (max-width: 870px) {
+    .skills {
+        padding: 50px 0 0 0;
+        &__container {
+           flex-direction: column;
+           gap: 20px;
+           width: 100%;
+            &__item {
+               width: 100%;
+            }
+        }
+    }
+}

@@ -40,3 +40,22 @@
     }
   }
 }
+
+@media (max-width: 870px) {
+    .profil {
+        &__container {
+          width: 85%;
+          &__title {
+            font-size: 30px;
+          }
+          &__content {
+              padding: 50px 0 0 0;
+              
+              &__text {
+                  font-size: 16px;
+                  width: 100%;
+              }
+          }
+        }
+    }
+}

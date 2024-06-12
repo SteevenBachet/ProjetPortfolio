@@ -39,4 +39,20 @@
   margin-top: 20px;
   height: 20px;
   background-color: aliceblue;
+}
+
+@media (max-width: 870px) {
+  .profil__container {
+    width: 85%;
+  }
+  .profil__container__title {
+    font-size: 30px;
+  }
+  .profil__container__content {
+    padding: 50px 0 0 0;
+  }
+  .profil__container__content__text {
+    font-size: 16px;
+    width: 100%;
+  }
 }/*# sourceMappingURL=profil.css.map */

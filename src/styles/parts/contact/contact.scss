@@ -99,7 +99,7 @@
             &__cv {
                 display: flex;
                 flex-direction: column;
-                gap: 10px;
+                gap: 25px;
                 &__image {
                     height: auto; 
                     width: 100%; 
@@ -127,7 +127,22 @@
     }
 }
 
-
+@media (max-width: 870px) {
+    .contact {
+        &__title {
+            margin: 0;
+        }
+        &__container {
+            flex-direction: column;
+            gap: 40px;
+            padding: 0;
+            &__item {
+                gap: 20px;
+                width: 330px;
+            }
+        }
+    }
+}
 
 
 
