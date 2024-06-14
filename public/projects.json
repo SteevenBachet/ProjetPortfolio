@@ -3,10 +3,10 @@
     "title": "Portfolio v2",
     "description": "Site web développeur",
     "images": [
-      "imagesProjects/project1/project1-1.PNG",
-      "imagesProjects/project1/project1-2.PNG",
-      "imagesProjects/project1/project1-3.PNG",
-      "imagesProjects/project1/project1-4.PNG"
+      "imagesProjects/project1/project1-1.webp",
+      "imagesProjects/project1/project1-2.webp",
+      "imagesProjects/project1/project1-3.webp",
+      "imagesProjects/project1/project1-4.webp"
     ],
     "information": "Site sur lequel vous êtes actuellement et toujours en cours d'évolution",
     "technologies": [
@@ -17,8 +17,8 @@
     "title": "Mon vieux grimoire",
     "description": "Projet de formation",
     "images": [
-      "imagesProjects/project2/project2-1.PNG",
-      "imagesProjects/project2/project2-2.PNG"
+      "imagesProjects/project2/project2-1.webp",
+      "imagesProjects/project2/project2-2.webp"
     ],
     "information": "Création du Back-end d'un site de notation de livres (login, création d'article, modification, suppression et notation)",
     "technologies": [
@@ -33,9 +33,9 @@
     "title": "Kasa",
     "description": "Projet de formation",
     "images": [
-      "imagesProjects/project3/project3-1.PNG",
-      "imagesProjects/project3/project3-2.PNG",
-      "imagesProjects/project3/project3-3.PNG"
+      "imagesProjects/project3/project3-1.webp",
+      "imagesProjects/project3/project3-2.webp",
+      "imagesProjects/project3/project3-3.webp"
     ],
     "information": "Création du Front-end d'un site le location d'hebergement avec React",
     "technologies": [
@@ -50,10 +50,10 @@
     "title": "Portfolio v1",
     "description": "Site web développeur",
     "images": [
-      "imagesProjects/project4/project4-1.PNG",
-      "imagesProjects/project4/project4-2.PNG",
-      "imagesProjects/project4/project4-3.PNG",
-      "imagesProjects/project4/project4-4.PNG"
+      "imagesProjects/project4/project4-1.webp",
+      "imagesProjects/project4/project4-2.webp",
+      "imagesProjects/project4/project4-3.webp",
+      "imagesProjects/project4/project4-4.webp"
     ],
     "information": "Ancien site portfolio pour mettre en valeur mes compétences lors d'entretien",
     "technologies": [
@@ -64,11 +64,11 @@
     "title": "E-SHOP autour du monde",
     "description": "Site web voyage",
     "images": [
-      "imagesProjects/project5/project5-1.PNG",
-      "imagesProjects/project5/project5-2.PNG",
-      "imagesProjects/project5/project5-3.PNG",
-      "imagesProjects/project5/project5-4.PNG",
-      "imagesProjects/project5/project5-5.PNG"
+      "imagesProjects/project5/project5-1.webp",
+      "imagesProjects/project5/project5-2.webp",
+      "imagesProjects/project5/project5-3.webp",
+      "imagesProjects/project5/project5-4.webp",
+      "imagesProjects/project5/project5-5.webp"
     ],
     "information": "Création et intégration d'un site de vente en ligne spécialisé dans les produits de voyage (site vitrine)",
     "technologies": [
@@ -79,8 +79,8 @@
     "title": "Maintenance compagny",
     "description": "Projet de formation",
     "images": [
-      "imagesProjects/project6/project6-1.PNG",
-      "imagesProjects/project6/project6-2.PNG"
+      "imagesProjects/project6/project6-1.webp",
+      "imagesProjects/project6/project6-2.webp"
     ],
     "information": "Création d'un petit site vitrine pour une entreprise de maintenance fictive afin de s'entrainer sur quelques techniques d'animations",
     "technologies": [
@@ -91,9 +91,9 @@
     "title": "The_Space_Trouble",
     "description": "Jeu vidéo coopératif",
     "images": [
-      "imagesProjects/project7/project7-1.png",
-      "imagesProjects/project7/project7-2.png",
-      "imagesProjects/project7/project7-3.png"
+      "imagesProjects/project7/project7-1.webp",
+      "imagesProjects/project7/project7-2.webp",
+      "imagesProjects/project7/project7-3.webp"
     ],
     "information": "Second jeu que j'ai crée avant de me lancer dans l'apprentissage du language C# et le développement web",
     "technologies": [
