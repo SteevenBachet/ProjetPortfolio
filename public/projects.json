@@ -25,7 +25,8 @@
       "Node.js", "Express", "MongoDB"
     ],
     "competences": ["Initialiser un projet Back-end", "Node.js", "Express", "MongoDB", "Opération CRUD", "Stocker des données de manière sécurisée", "Authentification", "API RESTful"],
-    "problematique": [""],
+    "problematique": ["Lors de la suppression d'images, des erreurs survenaient souvent en raison de chemins de fichiers incorrects, ce qui empêchait la suppression correcte des fichiers", "Lors de l'utilisation de jsonwebtoken pour l'authentification, il y avait des risques de sécurité si le secret du token était exposé"],
+    "resolution": ["Bonne utilisation de fs.access et path.join", "Utilisez des variables d'environnement pour stocker le secret du token"],
     "github": "https://github.com/SteevenBachet/Mon-Vieux-Grimoire"
   },
   {
@@ -41,7 +42,8 @@
       "HTML", "SASS", "React.JS"
     ],
     "competences": ["Initialiser une application Create React App", "structuration d'un projet", "Sass", "React.js", "eslint et prettier", "Configurer la navigation entre les pages de l'application avec React router", "Développer des éléments de l'interface d'un site web grâce à des composants React"],
-    "problematique": ["Créer une structure du projet cohérente"],
+    "problematique": ["la gestion de l'état pour ouvrir et fermer le contenu du composant Collapse, synchroniser correctement l'affichage", "La mise en place du routage dynamique, comme /housing/:id était complexe en termes de gestion des données et de navigation", "Créer un structure de projet cohérente"],
+    "resolution": ["l'utilisation du hook useState a simplifié cette tâche. Une simple bascule (toggleCollapse) a suffi pour gérer l'état de manière efficace", "En utilisant useParams de react-router-dom, la récupération des paramètres dynamiques de l'URL et La gestion des données via des props a permis de simplifier le passage des informations nécessaires", "grace aux cours et avec des exemples de projet de mon mentor"],
     "github": "https://github.com/SteevenBachet/Kasa"
   },
   {

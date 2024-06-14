@@ -138,6 +138,23 @@
   border-radius: 2px;
   padding: 3px;
 }
+.portfolio__modal__content__skill {
+  list-style-type: none;
+}
+.portfolio__modal__content__skill :nth-child(1) {
+  padding-top: 10px;
+}
+.portfolio__modal__content__problems-resolutions {
+  margin-top: 20px;
+  padding: 0;
+  list-style-type: none;
+}
+.portfolio__modal__content__problems-resolutions :nth-child(1) {
+  padding-top: 10px;
+}
+.portfolio__modal__content__problems-resolutions li {
+  margin-bottom: 10px;
+}
 
 @media (max-width: 1500px) {
   .portfolio__slider__button {
@@ -165,8 +182,9 @@
   .portfolio__container__item {
     flex: 0 0 100%;
   }
-  .portfolio__slider__button {
+  .portfolio__container__slider__button {
     width: 50px;
+    font-size: 6rem;
   }
   .portfolio__modal__content__technology {
     flex-direction: column;

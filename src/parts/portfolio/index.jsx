@@ -1,5 +1,4 @@
-// Importez useMemo pour éviter le recalcul des projets à chaque rendu
-import React, { useEffect, useState, useMemo } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../../styles/parts/portfolio/portfolio.css';
 import Carrousel from '../../components/carrousel';
 
@@ -18,34 +17,28 @@ const Portfolio = () => {
     fetchProjects();
   }, []);
 
-  // Utilisez useMemo pour éviter le recalcul de la liste des projets à chaque rendu
-  const projectList = useMemo(() => {
-    // Ajoutez une logique pour obtenir une liste étendue en dupliquant les projets
-    return projects.map((project, index) => (
-      <div
-        key={index}
-        className="portfolio__container__item"
-        onClick={() => openModal(project)}
-      >
-        <img
-          src={project.images[0]}
-          alt={project.title}
-          className="portfolio__container__item__image"
-        />
-        <h3 className="portfolio__container__item__title">{project.title}</h3>
-        <p className="portfolio__container__item__description">{project.description}</p>
-        <div className="portfolio__container__item__more-info">En savoir plus</div>
-      </div>
-    ));
-  }, [projects]);
+  const projectList = projects.map((project, index) => (
+    <div
+      key={index}
+      className="portfolio__container__item"
+      onClick={() => openModal(project)}
+    >
+      <img
+        src={project.images[0]}
+        alt={project.title}
+        className="portfolio__container__item__image"
+      />
+      <h3 className="portfolio__container__item__title">{project.title}</h3>
+      <p className="portfolio__container__item__description">{project.description}</p>
+      <div className="portfolio__container__item__more-info">En savoir plus</div>
+    </div>
+  ));
 
   const nextSlide = () => {
-    // Modifiez la logique pour obtenir le défilement infini
     setCurrentSlide((prev) => (prev + 1) % (projects.length / 2));
   };
 
   const prevSlide = () => {
-    // Modifiez la logique pour obtenir le défilement infini
     setCurrentSlide((prev) => (prev === 0 ? projects.length / 2 - 1 : prev - 1));
   };
 
@@ -95,6 +88,18 @@ const Portfolio = () => {
                 Compétences:
                 {selectedProject.competences.map((competence, index) => (
                   <li key={index}>{competence}</li>
+                ))}
+              </ul>
+            )}
+            {selectedProject.problematique && selectedProject.resolution && (
+              <ul className="portfolio__modal__content__problems-resolutions">
+                Problématiques et Résolutions:
+                {selectedProject.problematique.map((problem, index) => (
+                  <li key={index}>
+                    <strong>Problématique:</strong> {problem}
+                    <br />
+                    <strong>Résolution:</strong> {selectedProject.resolution[index]}
+                  </li>
                 ))}
               </ul>
             )}
