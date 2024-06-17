@@ -11,7 +11,7 @@ const Portfolio = () => {
     const fetchProjects = async () => {
       const response = await fetch('http://localhost:3000/projects.json');
       const data = await response.json();
-      // Ajoutez une logique pour dupliquer les projets
+      // dupliquer la liste de projet pour voir le début des projet à la fin du carrousel portfolio
       setProjects([...data, ...data]);
     };
     fetchProjects();
