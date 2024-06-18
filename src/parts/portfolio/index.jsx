@@ -9,7 +9,7 @@ const Portfolio = () => {
 
   useEffect(() => {
     const fetchProjects = async () => {
-      const response = await fetch('http://localhost:3000/projects.json');
+      const response = await fetch('/projects.json');
       const data = await response.json();
       // dupliquer la liste de projet pour voir le début des projet à la fin du carrousel portfolio
       setProjects([...data, ...data]);
